@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<header>
+    <title>Thais Gonzalez's Problem Set 1 </title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./Snap.svg-0.5.1/dist/snap.svg-min.js"></script>
+</header>
+<body id="body">
+    <nav>
+        <ul id="menu">
+            <li><a id="link" href="./index.html">Home</a></li>
+            <li><a id="link" href="./Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;Contact Information</h1>
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click to make me dizzy!</h3>
+    <img id="cartoon" src="./thaisCartoon2.jpg" alt="">
+    <p>Feel free to email me at <a class="link" href = "mailto: thaisgm@umich.edu">thaisgm@umich.edu</a>!</p>
+    <p>Additionally, connect with me on <a class="link" href = "https://www.linkedin.com/in/k-thais-gonzalez/">LinkedIn</a>!</p>
+    <p>Check out a Snap.svg animation!</p>
+   <script>
+        var s = Snap(500, 250);
+        // Lets create big circle in the middle:
+        var bigCircle = s.circle(150, 150, 100);
+        // By default its black, lets change its attributes
+        bigCircle.attr({
+            fill: "#bada55",
+            stroke: "#000",
+            strokeWidth: 5
+        });
+        p = p.pattern(0, 0, 10, 10);
+        bigCircle.attr({
+            fill: p
+        });
+    </script>
+
+   <script>
+        cartoon.addEventListener("click", function(){
+            document.getElementById("cartoon").style.animation = 'rotation 2s infinite linear';
+        });
+        body.addEventListener("mouseover", function(){
+            element = document.getElementById("cartoon").style;
+            element.removeProperty('animation');
+        });
+    </script>
+</body>
+<footer class="footer">
+    <p>Created by Thais Gonzalez in HTML</p>
+</footer>
+</html>

@@ -1,0 +1,85 @@
+#menu {
+    border: 3em;
+    border-radius: 10px;
+    opacity: 0.8;
+    font-size: large;
+}
+
+#link {
+    color: #ffffff;
+}
+
+.funFacts {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#cartoon {
+    max-width: 25%;
+    border-radius: 175px;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+#puppy {
+    max-width: 40%;
+    border-radius: 30px;
+}
+
+.footer {
+    bottom: 0em;
+    font-size: small;
+}
+
+.colorChange {
+    display: flex;
+}
+
+#backgroundButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    margin-left: 2em;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+}
+
+#backgroundButton:hover {
+    background-color:#ffffff; /* Green */
+    color: #4CAF50;
+  }
+
+@media only screen and (min-width: 400px) {
+    #body {
+        background-image: radial-gradient(#00e1ff, #2e3ae5);
+        color: #010764;
+
+    }
+
+    #menu {
+        background-color:#160052;
+        color: #95f8ff;
+    }
+    
+  }
+
+  @media only screen and (min-width: 768px) {
+    #body {
+        background-image: radial-gradient(#ff8a00, #e52e71);
+        color: #52002d;
+    }
+
+    #menu {
+        background-color:#52002d;
+        color: #ffc595;
+    }
+    
+  }
